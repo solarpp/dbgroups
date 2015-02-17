@@ -29,7 +29,7 @@ public class DownloadImage
 	public int download(String theFirstPostURL, String theFirstPostName,
 			String theFirstPostTitle)
 	{
-		System.out.println("analysing image links...");
+		System.out.println(String.format("analysing image links in %s", theFirstPostURL));
 		list = new ArrayList<String>();
 		list.clear();
 		HttpClient httpclient = new DefaultHttpClient();
